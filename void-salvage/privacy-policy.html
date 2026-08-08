@@ -110,6 +110,11 @@
       font-size: 0.9rem;
       color: var(--muted);
     }
+
+    code {
+      color: var(--text);
+      font-size: 0.95em;
+    }
   </style>
 </head>
 <body>
@@ -119,17 +124,19 @@
       <h1>Privacy Policy</h1>
       <p class="meta">
         Effective date: July 19, 2026<br />
-        Last updated: July 19, 2026<br />
-        Package: <code style="color: var(--text);">com.voidsalvage.game</code>
+        Last updated: August 8, 2026<br />
+        Package: <code>com.voidsalvage.game</code>
       </p>
     </header>
 
     <div class="callout">
       <p>
-        <strong>Short version:</strong> Void Salvage is offline-first.
-        In the current build, progress is saved only on your device.
-        We do not require an account, and we do not collect personal information,
-        analytics, or advertising identifiers.
+        <strong>Short version:</strong> Void Salvage is offline-first for gameplay.
+        Progress is saved on your device. We do not require an account.
+        Optional rewarded ads (Google AdMob) and optional tips (Google Play Billing)
+        may process device or purchase-related data under those providers’ policies.
+        In the EEA, UK, and Switzerland, you can manage ad consent through the
+        in-app consent message.
       </p>
     </div>
 
@@ -141,23 +148,26 @@
     </p>
     <p>
       Contact for privacy questions:
-      <!-- Replace with your real support email before publishing the URL. -->
       <a href="mailto:martsofteng@gmail.com">martsofteng@gmail.com</a>
     </p>
 
     <h2>2. Information we collect</h2>
     <p>
-      <strong>We do not collect personal information</strong> in the current build of the App.
+      <strong>We do not operate our own servers that collect personal profiles</strong>
+      for Void Salvage. The App does not require an account or ask you for your name,
+      email address, or phone number.
     </p>
     <p>Specifically, the App does <strong>not</strong>:</p>
     <ul>
-      <li>Require you to create an account or sign in</li>
-      <li>Collect your name, email address, phone number, or payment details</li>
-      <li>Use analytics or crash-reporting services that send data to us</li>
-      <li>Show live advertisements or use advertising SDKs</li>
-      <li>Access your contacts, photos, microphone, or location</li>
-      <li>Share data with third parties for advertising or profiling</li>
+      <li>Require you to create an account or sign in with us</li>
+      <li>Collect your name, email address, or phone number for our own database</li>
+      <li>Use a separate analytics or crash-reporting service that sends gameplay telemetry to us</li>
+      <li>Access your contacts, photos, microphone, or precise location</li>
     </ul>
+    <p>
+      When you use optional ads or purchases, third-party platforms may process
+      limited technical and commercial data as described in sections 6 and 7.
+    </p>
 
     <h2>3. Data stored on your device</h2>
     <p>
@@ -167,9 +177,10 @@
       <li>Unlocked ships, contracts, and hangar progression</li>
       <li>Scrap, inventory items, and related run meta</li>
       <li>Settings you choose in the App (for example, audio preferences)</li>
+      <li>Ad consent choices stored by Google’s User Messaging Platform (UMP), where shown</li>
     </ul>
     <p>
-      This data stays on your device. Uninstalling the App, clearing app storage,
+      Game progress stays on your device. Uninstalling the App, clearing app storage,
       or wiping the device may delete it. We cannot restore local progress from our side
       because we do not keep a copy on our servers.
     </p>
@@ -177,22 +188,83 @@
     <h2>4. Internet access</h2>
     <p>
       Core gameplay is designed to work <strong>offline</strong>.
-      The current build does not require a network connection to play contracts or save progress.
-      If the operating system or store client uses the network for installation, updates,
-      or license checks, that is handled by the platform (for example Google Play), not by Void Salvage servers.
+      You do not need a network connection to play contracts or save local progress.
+    </p>
+    <p>
+      A network connection is used when you:
+    </p>
+    <ul>
+      <li>Watch an optional rewarded advertisement</li>
+      <li>Complete an optional tip / in-app purchase through Google Play</li>
+      <li>Download or update the App from the store</li>
+    </ul>
+    <p>
+      Installation, updates, and license checks are handled by the platform
+      (for example Google Play), not by Void Salvage servers.
     </p>
 
     <h2>5. Children</h2>
     <p>
       The App is a general-audience arcade game. We do not knowingly collect personal
-      information from children. Because the current build does not collect personal data
-      at all, we do not process children’s personal information.
+      information from children for our own use. Advertising and purchase platforms
+      may apply their own age and consent rules. If you believe a child has provided
+      personal information inappropriately through a third-party service used by the App,
+      contact us and we will help where we reasonably can.
     </p>
 
-    <h2>6. Third-party services</h2>
+    <h2>6. Advertising (Google AdMob)</h2>
     <p>
-      The current build does <strong>not</strong> integrate third-party analytics,
-      advertising, or cloud save providers.
+      The App may show <strong>optional rewarded advertisements</strong> through
+      <strong>Google AdMob</strong> (and Google’s advertising partners). Ads are not
+      required to play the core game; they unlock optional bonuses when you choose to watch them.
+    </p>
+    <p>
+      To deliver, measure, and (where allowed) personalize ads, AdMob and its partners
+      may process information such as:
+    </p>
+    <ul>
+      <li>Advertising ID / device identifiers</li>
+      <li>IP address and approximate location derived from network data</li>
+      <li>Device and app technical information</li>
+      <li>Ad interaction and performance data</li>
+    </ul>
+    <p>
+      That processing is governed by Google’s policies, including the
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>
+      and
+      <a href="https://support.google.com/admob/answer/6128543" rel="noopener noreferrer">AdMob help on data and privacy</a>.
+    </p>
+    <p>
+      In the <strong>European Economic Area, United Kingdom, and Switzerland</strong>,
+      the App uses Google’s <strong>User Messaging Platform (UMP)</strong> to show a
+      consent message before personalized ads are requested, where required.
+      You can consent, manage options, or choose not to consent. You can change your
+      choice later where the platform provides a way to revisit consent.
+    </p>
+    <p>
+      On Android, the App may use the advertising ID for advertising purposes as
+      disclosed in Google Play’s Data safety form for this App.
+    </p>
+
+    <h2>7. Optional tips and in-app purchases</h2>
+    <p>
+      The App may offer <strong>optional tip / support purchases</strong> processed by
+      <strong>Google Play Billing</strong>. We do not collect or store your full payment
+      card details. Google processes payment information under Google’s policies.
+    </p>
+    <p>
+      Purchase confirmation data needed to grant the tip reward in the App is handled
+      through the Play Billing flow on your device. See Google’s
+      <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener noreferrer">Payments privacy notice</a>
+      and the
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.
+    </p>
+
+    <h2>8. Other third-party services</h2>
+    <p>
+      Beyond AdMob and Google Play Billing described above, the current build does
+      <strong>not</strong> integrate separate third-party analytics or cloud save providers
+      operated by us.
     </p>
     <p>
       Distribution platforms (such as Google Play) have their own privacy practices
@@ -200,40 +272,34 @@
       platform’s policies, not this document.
     </p>
 
-    <h2>7. Future changes (ads and in-app purchases)</h2>
-    <p>
-      We may later add features such as:
-    </p>
-    <ul>
-      <li>Rewarded or interstitial advertisements (for example via Google AdMob)</li>
-      <li>Optional in-app purchases through the platform store</li>
-    </ul>
-    <p>
-      If we do, those services may process device identifiers or purchase-related data
-      under their own privacy policies. We will <strong>update this Privacy Policy</strong>
-      and Play Console Data safety disclosures before enabling live ads or billing,
-      and we will revise the “Last updated” date above.
-    </p>
-
-    <h2>8. Your choices</h2>
+    <h2>9. Your choices</h2>
     <ul>
       <li>You can stop using the App at any time by uninstalling it.</li>
       <li>You can clear local App data through your device settings.</li>
-      <li>Because we do not hold personal data on our servers, there is no account
-          profile for us to export or delete remotely.</li>
+      <li>You can skip rewarded ads; they are optional.</li>
+      <li>Where shown, you can use the consent message to manage ad preferences
+          (Consent, Manage options, or Do not consent).</li>
+      <li>On Android, you can reset or limit the advertising ID in system settings.</li>
+      <li>Because we do not hold personal profiles on our servers, there is no account
+          for us to export or delete remotely. For data held by Google (ads or payments),
+          use Google’s tools and policies, or contact us and we will point you in the right direction.</li>
     </ul>
 
-    <h2>9. Changes to this policy</h2>
+    <h2>10. Changes to this policy</h2>
     <p>
       We may update this Privacy Policy from time to time. The “Last updated” date
       at the top will change when we do. Continued use of the App after an update
       means you acknowledge the revised policy.
     </p>
 
-    <h2>10. Contact</h2>
+    <h2>11. Contact</h2>
     <p>
       Questions about this Privacy Policy:
       <a href="mailto:martsofteng@gmail.com">martsofteng@gmail.com</a>
+    </p>
+    <p>
+      Related:
+      <a href="https://martdev1963.github.io/app-policies/void-salvage/terms-of-service.html">Terms of Service</a>
     </p>
 
     <footer>
@@ -241,4 +307,4 @@
     </footer>
   </main>
 </body>
-</html
+</html>
